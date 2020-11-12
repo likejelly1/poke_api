@@ -1,5 +1,5 @@
 
-import { Hero, MyPokemonList, PokemonList } from '.../../Components'
+import { Hero, MyPokemonList, PokemonList } from '../../Components'
 import React, { Component } from 'react'
 
 
