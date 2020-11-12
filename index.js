@@ -24,7 +24,6 @@ app.use('/myPokemonList',PokemonRoutes)
 if (process.env.NODE_ENV === "production") {
     app.use(express.static('/poke_web/build'))
 }
-io
 socket = io.listen(process.env.PORT);
 mongoose.connect('mongodb+srv://jelly:fSVfA3vDbFbOBrXA@cluster0.ozknc.mongodb.net/poke_api?retryWrites=true&w=majority', {
     useNewUrlParser: true,
