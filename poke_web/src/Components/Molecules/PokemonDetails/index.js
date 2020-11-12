@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Media, Modal } from 'react-bootstrap'
-import { catchNow } from 'Utils'
+import  catchNow  from '../../../Utils'
 import { FormModal } from '..'
 
 export class PokemonDetails extends Component {
