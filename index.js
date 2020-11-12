@@ -22,9 +22,9 @@ app.use((req, res, next) => {
 app.use('/myPokemonList',PokemonRoutes)
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static('/poke_web/build'))
+    app.use(express.static('poke_web/build'))
 }
-mongoose.connect('mongodb+srv://jelly:fSVfA3vDbFbOBrXA@cluster0.ozknc.mongodb.net/poke_api?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology:true
 })
