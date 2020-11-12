@@ -1,0 +1,9 @@
+{
+    "myPokemon":[{
+        "id":1,
+        "pokemonId":1,
+        "name":"badak",
+        "species": "bulbasaur",
+        "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    }]
+}
