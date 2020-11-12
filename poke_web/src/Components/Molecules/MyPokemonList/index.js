@@ -18,7 +18,7 @@ export default class MyPokemonList extends Component {
                 id:id
             }
             
-            fetch("http://localhost:4000/myPokemonList/delete", {
+            fetch("/myPokemonList/delete", {
                 method: "DELETE",
                 headers: {
                     'Accept': 'application/json',
@@ -37,7 +37,7 @@ export default class MyPokemonList extends Component {
     }
     
     render() {
-        fetch("http://localhost:4000/myPokemonList/getAll")
+        fetch("/myPokemonList/getAll")
             .then(res => res.json())
             .then(response => {
                 this.setState({

@@ -26,7 +26,7 @@ export default class FormModal extends Component {
                 species: this.props.species,
                 imageUrl: this.props.imageUrl,
             }
-            fetch("http://localhost:4000/myPokemonList/add", {
+            fetch("/myPokemonList/add", {
                 method: "POST",
                 headers: {
                     'Accept': 'application/json',
