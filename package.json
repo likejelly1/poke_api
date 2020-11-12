@@ -10,7 +10,7 @@
     "install-client": "cd poke_web && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "client": "cd poke_web && npm start",
-    "start": "npm run nodemon index.js"
+    "start": "npm run index.js"
   },
   "author": "Jallu Ramadhan",
   "license": "ISC",
